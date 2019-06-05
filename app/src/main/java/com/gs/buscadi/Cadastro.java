@@ -93,7 +93,7 @@ public class Cadastro extends AppCompatActivity {
             usuario.setNome(edtNome.getText().toString());
             usuario.setTelefone(edtTelefone.getText().toString());
             usuario.setSenha(edtSenha.getText().toString());
-            String newUser = "INSERT INTO CLIENTE VALUES ('"++"','','','')";
+            String newUser = "INSERT INTO CLIENTE VALUES ('"+usuario.getNome()+"','','','')";
             DatabaseHelper dh = new DatabaseHelper();
             dh.inserirNovoUsuario(usuario);
             Intent intent3 = new Intent(getApplicationContext(), MainActivity.class);
