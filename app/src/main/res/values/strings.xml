@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">BuscaDI</string>
+    <string name="usuario" translatable="false">Ususario</string>
+    <string name="login" translatable="false">Entrar</string>
+    <string name="senha" translatable="false">Senha</string>
+    <string name="cd_email" >Email</string>
+    <string name="cd_telefone" >Telefone</string>
+    <string name="cd_senhac" >Senhac</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="title_activity_user_menu">User_menu</string>
+    <string name="lbl_nome">Nome</string>
+    <string name="lbl_Nome">Nome</string>
+
+</resources>
