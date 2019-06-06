@@ -19,7 +19,7 @@ public class Usuario {
     private String telefone;
     private String email;
     private String senha;
-
+/////
 
     public Usuario(Context context){
         this.context = context;
