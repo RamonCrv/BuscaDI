@@ -12,12 +12,19 @@ public class DadosOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL( ScriptDLL.getCreateTablecliente());
-        db.execSQL("INSERT....");
+        db.execSQL("CREATE TABLE Usuario(\n" +
+                "   CODIGO   INT PRIMARY KEY AUTOINCREMENT NOT NULL,\n" +
+                "   NOME     VARCHAR (40)  NOT NULL ,\n" +
+                "   EMAIL    VARCHAR (40)  NOT NULL ,\n" +
+                "   TELEFONE VARCHAR (13)  NOT NULL ,\n" +
+                "   IMAGEM   BLOB          NOT NULL  \n" +
+                "   );");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
+    }
 
 
 
@@ -27,26 +34,4 @@ public class DadosOpenHelper extends SQLiteOpenHelper {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
 

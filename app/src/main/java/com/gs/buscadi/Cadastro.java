@@ -88,14 +88,14 @@ public class Cadastro extends AppCompatActivity {
 
     public void bt_cadastrar(View view) {
         if(validarcad()){
-            Usuario usuario = new Usuario();
+            Usuario usuario = new Usuario(null) ;
             usuario.setEmail(edtEmail.getText().toString());
             usuario.setNome(edtNome.getText().toString());
             usuario.setTelefone(edtTelefone.getText().toString());
             usuario.setSenha(edtSenha.getText().toString());
             String newUser = "INSERT INTO CLIENTE VALUES ('"+usuario.getNome()+"','','','')";
-            DatabaseHelper dh = new DatabaseHelper();
-            dh.inserirNovoUsuario(usuario);
+
+
             Intent intent3 = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent3);
 
